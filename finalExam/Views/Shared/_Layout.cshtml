@@ -1,9 +1,15 @@
-﻿<!DOCTYPE html>
+﻿<!--
+File   : Layout.cshtml
+Author : Jinal Patel(200299533)
+Description:  This is Layout page. -->
+
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Music Store</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -21,6 +27,12 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Albums", "Index", "Albums")</li>
+
+                    <li>@Html.ActionLink("Artists", "Index", "Artists")</li>
+
+                    <li>@Html.ActionLink("Genres", "Index", "Genres")</li>
+
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
@@ -31,7 +43,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Music Store</p>
         </footer>
     </div>
 
